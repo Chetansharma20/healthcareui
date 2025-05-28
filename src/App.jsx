@@ -5,7 +5,7 @@ import Schedules from './components/Schedules'
 import '../src/css/dashboard.css';
 import '../src/css/schedule.css';
 import '../src/css/sidebar.css';
-import './app.css';
+import './App.css';
 import '../src/index.css';
 
 const App = () => {
