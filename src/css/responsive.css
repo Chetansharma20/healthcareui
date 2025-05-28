@@ -1,260 +1,132 @@
 @media (min-width: 768px) and (max-width: 900px) {
   .AppBar {
-    flex-direction: row !important;
-    width: 95% !important;
-    height: 95% !important;
-    border-radius: 30px !important;
-    align-items: stretch !important;
-    padding: 0 !important;
-    gap: 0 !important;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 95%;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+  }
 
-  }
   .sidebar {
-    width: 90px !important;
-    
-    border-radius: 18px !important;
-    margin: 0px 0px 0px 0px !important;
-    align-items: center !important;
+    width: 90px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
   }
+
   .logo {
-    font-size: 13px !important;
-    margin-top: 10px !important;
+    font-size: 14px;
+    margin: 8px 0;
   }
-  .headings {
-    font-size: 9px !important;
-   
-  }
-  .navbar {
-    font-size: 10px !important;
-    margin-bottom: 4px !important;
-  }
+
   .nav-link {
-    font-size: 11px !important;
-    margin-left: 8px !important;
-    margin-top: 4px !important;
-    padding: 4px 0 !important;
-    width: 100% !important;
-  }
-  .nav-link .icon {
-    font-size: 10px !important;
-    margin-right: 5px !important;
-  }
-  .setting {
-    position: static !important;
-    margin: 8px 0 0 0 !important;
-    font-size: 10px !important;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px;
+    border-radius: 8px;
+    width: 100%;
   }
 
   .dashboard {
-    width: 340px !important;
-    min-width: 0 !important;
-    padding: 8px 2px !important;
-    align-items: stretch !important;
-    font-size: 11px !important;
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 12px;
   }
+
   .search-bar {
-    height: 28px !important;
-    margin-top: 10px !important;
-    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
+
   .search-bar input {
-    font-size: 10px !important;
-    padding: 4px 12px 4px 16px !important;
+    font-size: 12px;
+    padding: 6px 16px 6px 24px;
   }
-  .search-icon {
-    left: 12px !important;
-    top: 6px !important;
-    font-size: 12px !important;
-  }
+
   .headers {
-    margin-left: 12px !important;
-    margin-top: 4px !important;
-    height: 18px !important;
-    font-size: 12px !important;
+    font-size: 14px;
+    margin-bottom: 8px;
   }
-  .week-select {
-    margin-right: 12px !important;
-    font-size: 10px !important;
-  }
+
   .anatomy-and-cards {
-    gap: 6px !important;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
   }
+
   .humanAnatomy {
-    height: 110px !important;
-    width: 36% !important;
-    border-radius: 8px !important;
-    left: 2px !important;
-    bottom: 2px !important;
+    width: 50%;
+    min-width: 260px;
+    height: 130px;
+    position: relative;
   }
+
   .humanAnatomy img {
-    height: 90px !important;
-    left: 10px !important;
-    top: 6px !important;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
   }
-  .healthyheart, .healthyleg {
-    width: 48px !important;
-    height: 12px !important;
-    font-size: 8px !important;
-    border-radius: 4px !important;
-    padding-top: 2px !important;
-  }
-  .healthyheart {
-    top: 20px !important;
-    left: 35px !important;
-  }
+
+  .healthyheart,
   .healthyleg {
-    top: 60px !important;
-    right: 30px !important;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 6px;
   }
+
   .health-cards-container {
-    left: 10px !important;
-    gap: 2px !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
   }
+
   .card {
-    width: 60px !important;
-    height: 35px !important;
-    border-radius: 5px !important;
-    margin-bottom: 4px !important;
+    width: 80px;
+    height: 50px;
+    padding: 6px;
+    border-radius: 6px;
   }
-  .card h3 {
-    font-size: 8px !important;
-    left: 4px !important;
-  }
-  .card span {
-    font-size: 10px !important;
-  }
-  .details {
-    left: 0 !important;
-    top: 0 !important;
-    margin: 4px 0 !important;
-    font-size: 10px !important;
-  }
+
   .activity {
-    border-radius: 6px !important;
-    padding: 4px 2px !important;
-    margin-top: 6px !important;
-    font-size: 10px !important;
-    height: 60px !important;
-  }
-  .activity svg {
-    min-width: 180px !important;
-    width: max-content !important;
-    height: 40px !important;
+    height: auto;
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   .Schedules {
-    width: 180px !important;
-    min-width: 0 !important;
-    border-radius: 8px !important;
-    margin: 6px 2px 6px 2px !important;
-    font-size: 11px !important;
-    padding: 6px 2px !important;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
   }
-  .top {
-    gap: 4px !important;
-    padding: 4px !important;
-    margin-top: 6px !important;
-    margin-right: 4px !important;
-  }
-  .icon-button {
-    width: 18px !important;
-    height: 18px !important;
-    font-size: 11px !important;
-    border-radius: 4px !important;
-  }
+
   .weekly-calendar {
-    padding: 4px !important;
-    border-radius: 4px !important;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
   }
-  .calendar-header {
-    font-size: 10px !important;
-    margin-bottom: 2px !important;
-  }
-  .arrows span {
-    font-size: 10px !important;
-    margin: 0 2px !important;
-  }
-  .calendar-week {
-    gap: 2px !important;
-  }
-  .day-column {
-    padding: 2px 1px !important;
-    border-radius: 4px !important;
-    font-size: 8px !important;
-  }
-  .day-label, .date-label {
-    font-size: 7px !important;
-  }
-  .time-pill {
-    font-size: 7px !important;
-    padding: 2px 3px !important;
-    border-radius: 4px !important;
-  }
-  .appointment-cards {
-    gap: 2px !important;
-    height: 22px !important;
-  }
+
   .appointment-card {
-    border-radius: 3px !important;
-    font-size: 7px !important;
-    width: 28px !important;
-    height: 14px !important;
-    padding: 2px 1px !important;
+    min-width: 40px;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 6px;
   }
-  .appointment-card.dentist, .appointment-card.physio {
-    width: 28px !important;
-    height: 14px !important;
-    border-radius: 5px !important;
-    font-size: 7px !important;
-    padding: 2px 1px !important;
-  }
-  .appointment-card.dentist h5,
-  .appointment-card.physio h5 {
-    font-size: 7px !important;
-    margin-left: 2px !important;
-  }
-  .appointment-card.dentist p,
-  .appointment-card.physio p {
-    font-size: 6px !important;
-    margin-left: 2px !important;
-  }
-  .schedule-container {
-    height: 32px !important;
-    font-size: 7px !important;
-  }
+
   .schedule-title {
-    font-size: 9px !important;
-  }
-  .upcoming-schedule {
-    gap: 2px !important;
-  }
-  .day-section {
-    gap: 1px !important;
-  }
-  .day-label {
-    font-size: 6px !important;
-  }
-  .box-container {
-    gap: 2px !important;
-  }
-  .mini-box {
-    width: 28px !important;
-    height: 10px !important;
-    border-radius: 3px !important;
-    padding: 2px 2px !important;
-  }
-  .mini-icon {
-    font-size: 7px !important;
-    margin-right: 2px !important;
-  }
-  .mini-title {
-    font-size: 6px !important;
-  }
-  .mini-time {
-    font-size: 5px !important;
-    margin-top: 1px !important;
+    font-size: 12px;
   }
 }
