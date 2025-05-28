@@ -7,7 +7,7 @@
   display: flex;  
             
 }
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
      html, body, #root {
     margin: 0 !important;
@@ -19,7 +19,7 @@
      display: flex; 
        align-items: center;
        justify-content: center;
-     /* Prevent scroll globally */
+   
   }
   
 
