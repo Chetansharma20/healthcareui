@@ -1,0 +1,219 @@
+.dashboard
+ {
+  
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+ }
+
+ .search-bar{
+
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+
+  margin-top: 40px;
+  margin-left:35px;
+  
+ }
+ .search-bar input
+ {
+ width: 100%;
+  padding: 8px 32px 8px 32px; 
+  border: 1px solid rgb(247, 242, 242);
+  border-radius: 8px;
+  font-size: 14px;
+ }
+.search-icon {
+  position: relative;
+  left: 40px;
+color: '#003366';
+  top: 12px;
+  size: 1em;
+}
+
+.headers {
+  /* background-color: teal ; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-top: 10px;
+  height: 40px;
+  color: #29276a;
+
+}
+.week-select{
+  margin-right: 60px;
+  color: #3f35ad;
+}
+.humanAnatomy{
+  height: 340px;
+   background-color: #f6f9fe;
+  width: 40%;
+  border: 1px solid none;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+
+
+}
+.healthyheart{
+  background-color: #352fad;
+  width: 120px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding-top: 10px;
+  color: white;
+  position: absolute;
+  top: 85px;
+  left: 160px;
+}
+
+.healthyleg{
+   background-color: #04dff4;
+  width: 120px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding-top: 10px;
+  color: darkblue;
+  position: absolute;
+  top: 210px;
+  right: 170px;
+  text-align: center;
+
+
+}
+
+ .anatomy-and-cards {
+  display: flex;
+  gap: 20px;
+  
+  justify-content: center;
+  align-items: center;
+  /* background-color: teal; */
+  width: 100%;
+
+}
+.health-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* background-color: teal; */
+  position: relative;
+  left:100px
+}
+
+.card {
+  /* padding: 16px; */
+  border-radius: 12px;
+  background-color: #003366;
+  color: white;
+  width: 200px;
+  height: 120px;
+ background-color: #f6f9fe;
+
+  
+
+}
+
+.status-bar {
+ height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 3px;
+
+}
+.status-bar-container {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 90%;
+}
+
+
+
+.card h3{
+  position: relative;
+  left: 20px;
+  color: #003366;
+ 
+}
+.card span{
+  font-size: large;
+}
+.details
+{
+  color: #3734a9;
+  font-weight: bold;
+  position: relative;
+  left: 35px;
+  top: 200px;
+}
+@media (max-width: 768px) {
+  
+  .dashboard {
+    width: 100vw;
+    min-width: 0;
+    align-items: stretch;
+    padding: 10px 0;
+    
+  }
+  .search-bar {
+    margin: 20px 10px 0 10px;
+    width: calc(100vw - 20px);
+  }
+  .headers {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .anatomy-and-cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  
+  }
+  .humanAnatomy, .health-cards-container {
+    width: 100%;
+    left: 0;
+    position: relative;
+    top: 100px;
+  }
+  .card {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 15px;
+  }
+  .details {
+    left: 0;
+    top: 0;
+    margin: 10px 0;
+    position: static;
+  }
+}
+.activity{
+
+  position: relative;
+     width: calc(100vw - 20px);
+  right: 30px;
+  overflow-x: auto;
+}
+.activity h4{
+  margin-left: 50px !important;
+}
+.activity svg,
+.activity .activity-content {
+  min-width: 300px; 
+  width: max-content;
+}

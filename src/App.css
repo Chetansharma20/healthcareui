@@ -1,0 +1,35 @@
+.AppBar {
+  background-color: #ffffff;     
+  height: 97%;               
+  width: 97%;                
+  border-radius: 40px;       
+  padding: 0px; 
+  display: flex;  
+            
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+     html, body, #root {
+    margin: 0 !important;
+    padding: 0 !important;
+     height: 100vh;        
+  background-color: #e6f0f9;  
+    width: 100%;
+    overflow: hidden; 
+     display: flex; 
+       align-items: center;
+       justify-content: center;
+     /* Prevent scroll globally */
+  }
+  
+
+  .AppBar {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+   
+    align-items: stretch;
+  }
+}
